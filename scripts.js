@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         
         window.scrollTo({
-          top: posicao - 150,
+          top: posicao - 100,
           behavior: "smooth"
         });
       }
