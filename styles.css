@@ -1,0 +1,313 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+body {
+  min-height: 2500px;
+  background-color: #f5f5f5;
+  padding-top: 120px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* Barra superior fixa com logo e menu */
+.caixa-botao {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #017143;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  z-index: 1000;
+}
+
+/* Menu de botões do cabeçalho */
+.menu {
+  display: flex;
+  gap: 150px;
+}
+
+/* Estilo dos botões do menu */
+.caixa-botao button {
+  font-size: 16px;
+  padding: 10px 20px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Efeito hover nos botões */
+.caixa-botao button:hover {
+  background-color: white;
+  color: #017143;
+}
+
+/* Logo do cabeçalho */
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+/* Primeira seção de conteúdo (apresentação) */
+.conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px;
+  font-size: 30px;
+  background-color: #ebe7e7;
+  border: 2px solid #017143;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 1500px;
+  margin-top: 300px;
+}
+
+/* Título principal */
+h1 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #017143;
+}
+
+
+
+/* Seção 2 - como campo e cidade se complementam */
+.conteudo2 {
+  display: flex;
+  font-size: 30px;
+  background-color: #ebe7e7;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 200px auto;
+  max-width: 1500px;
+  margin-top: 400px;
+}
+
+/* Título da seção 2 */
+h2 {
+  color: #017143;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Imagem decorativa quadrada (fundo) */
+.img-quadrado {
+  width: 100%;
+  height: 1100px;
+  z-index: -2;
+  display: flex;
+  margin-top: -650px;
+  margin-left: -40px;
+  position: absolute;
+}
+
+
+/* Seção com 3 imagens lado a lado */
+.caixa-imagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  margin-top: 100px;
+  margin-right: 60px;
+}
+
+/* Estilo das imagens laterais (plantação e mercado) */
+.imagem {
+  max-width: 800px;
+  width: auto;
+  height: auto;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+
+/* Estilo da seta no meio */
+.seta {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* Efeito ao passar o mouse nas imagens */
+.imagem:hover,
+.seta:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Seção de sustentabilidade */
+.conteudo3 {
+  display: flex;
+  font-size: 30px;
+  background-color: #ebe7e7;
+  border: 2px solid #017143;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 200px auto;
+  max-width: 1500px;
+  margin-top: 400px;
+}
+
+/* Título da seção 3 */
+h3 {
+  color: #017143;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Bloco da sustentabilidade no campo */
+.conteudo-campo {
+  display: inline-flexbox;
+  font-size: 30px;
+  background-color: #ebe7e7;
+  border: 2px solid #017143;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 200px auto;
+  max-width: 1500px;
+  margin-top: -180px;
+  text-align: center;
+}
+
+/* Títulos de seção geral */
+h4 {
+  color: #017143;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+/* Seção da galeria de imagens */
+.galeria {
+  display: inline-flexbox;
+  font-size: 30px;
+  background-color: #ebe7e7;
+  border: 2px solid #017143;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 200px auto;
+  max-width: 1500px;
+  margin-top: 300px;
+}
+
+/* Título da galeria */
+h5 {
+  color: #017143;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Estilo geral das imagens da galeria */
+img {
+  width: 400px;
+  height: 300px;
+  display: inline-flex;
+  gap: 10px;
+  border-radius: 10px;
+  margin-left: 50px;
+}
+
+/* Segundo quadrado decorativo */
+.img-quadrado2 {
+  width: 100%;
+  height: 840px;
+  z-index: -2;
+  display: flex;
+  margin-top: -1000px;
+  margin-left: -40px;
+  position: absolute;
+}
+
+
+/* Seção final com informações sobre o projeto */
+.texto-sobre {
+  color: #017143;
+  font-size: 45px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-align: start;
+  margin-top: 400px;
+}
+
+/* Títulos da seção 'Sobre' */
+.texto-sobre h6 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+/* Parágrafos da seção 'Sobre' */
+.texto-sobre p {
+  font-size: 30px;
+}
+
+/* Cor padrão para parágrafos */
+p {
+  color: black;
+}
+
+
+/* Estilo do texto final de agradecimento */
+.fim {
+  color: #ffffff;
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 400px;
+}
+
+/* Imagem decorativa verde final */
+.quadrado-verde-fim {
+  width: 100%;
+  height: 500px;
+  z-index: -2;
+  display: flex;
+  margin-top: -460px;
+  margin-left: -40px;
+  position: absolute;
+}
+
+/* Créditos finais */
+.nome {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 180px;
+}
+
+/* Estilo responsivo para telas menores */
+@media (max-width: 768px) {
+  .caixa-texto,
+  .caixa-imagem {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
